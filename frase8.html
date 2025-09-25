@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pequenos Progressos</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+        
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Nunito', sans-serif;
+            color: #E0E0E0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(160deg, #2c3e50, #34495e);
+            overflow: hidden;
+        }
+
+        .container {
+            padding: 30px;
+            max-width: 90%;
+            animation: fadeIn 2s forwards;
+            opacity: 0;
+        }
+
+        .stars-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .stars-container svg {
+            width: clamp(30px, 8vw, 50px);
+            height: auto;
+            fill: #f1c40f;
+        }
+
+        .star-1 { animation: twinkle 3s infinite ease-in-out; }
+        .star-2 { animation: twinkle 3s infinite ease-in-out 0.5s; }
+        .star-3 { animation: twinkle 3s infinite ease-in-out 1s; }
+
+        h1 {
+            font-size: clamp(2.1rem, 6vw, 3.5rem);
+            font-weight: 600;
+            line-height: 1.4;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.6; transform: scale(0.9); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="stars-container">
+            <svg class="star-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21Z"/></svg>
+            <svg class="star-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21Z"/></svg>
+            <svg class="star-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21Z"/></svg>
+        </div>
+        <h1>Pequenos progressos ainda são progressos. Celebre cada passo, não importa o tamanho.</h1>
+    </div>
+</body>
+</html>

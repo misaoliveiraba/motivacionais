@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Superpoder</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300&display=swap');
+        
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Poppins', sans-serif;
+            color: #2c3e50;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(-45deg, #FFEFBA, #FFFFFF);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+        }
+
+        .container {
+            padding: 30px;
+            max-width: 90%;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 20px;
+            backdrop-filter: blur(8px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            animation: bounceIn 1.2s ease-out;
+        }
+
+        .icon-container {
+            margin-bottom: 20px;
+            animation: pulse 2s infinite alternate;
+        }
+        
+        .icon-container svg {
+            width: clamp(70px, 15vw, 120px);
+            height: auto;
+            fill: #f39c12; /* Cor do ícone */
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: clamp(2.2rem, 8vw, 4.5rem);
+            font-weight: 400;
+            line-height: 1.4;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes bounceIn {
+            0% { transform: scale(0.8); opacity: 0; }
+            60% { transform: scale(1.05); opacity: 1; }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.08); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12,2A7,7,0,0,0,5,9c0,2.38,1.19,4.47,3,5.74V17a1,1,0,0,0,1,1h6a1,1,0,0,0,1-1V14.74c1.81-1.27,3-3.36,3-5.74A7,7,0,0,0,12,2ZM9,21a1,1,0,0,0,1,1h4a1,1,0,0,0,1-1V20H9Z"/>
+            </svg>
+        </div>
+        <h1>Sua criatividade é um superpoder. Não deixe que o mundo a coloque em uma caixa. Crie, ouse, transforme.</h1>
+    </div>
+</body>
+</html>

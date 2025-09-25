@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Ritmo</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+        
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Righteous', cursive;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #1a1a1a;
+            overflow: hidden;
+        }
+
+        .container {
+            padding: 30px;
+            max-width: 90%;
+            z-index: 1;
+            animation: fadeIn 2s;
+        }
+
+        .icon-container {
+            margin-bottom: 25px;
+            animation: neonPulse 2.5s infinite alternate;
+        }
+        
+        .icon-container svg {
+            width: clamp(120px, 30vw, 220px);
+            height: auto;
+        }
+
+        h1 {
+            font-size: clamp(2.4rem, 8vw, 4.8rem);
+            line-height: 1.4;
+            letter-spacing: 1.5px;
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #00ffdd, 0 0 20px #00ffdd, 0 0 25px #00ffdd;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes neonPulse {
+            from { filter: drop-shadow(0 0 5px #00ffdd); }
+            to { filter: drop-shadow(0 0 20px #ff00ff); }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 50">
+                <path d="M0,25 C10,10 15,40 25,25 C35,10 40,40 50,25 C60,10 65,40 75,25 C85,10 90,40 100,25"
+                      stroke="#00ffdd" stroke-width="3" fill="none" />
+            </svg>
+        </div>
+        <h1>A vida é como uma música. Encontre seu ritmo, dance suas melodias e não tenha medo de aumentar o volume.</h1>
+    </div>
+</body>
+</html>
