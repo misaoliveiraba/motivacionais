@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua História</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
+        
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Playfair Display', serif;
+            color: #3d322b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #fdf6e3;
+            background-image: linear-gradient(45deg, rgba(0,0,0,0.02) 25%, transparent 25%, transparent 75%, rgba(0,0,0,0.02) 75%, rgba(0,0,0,0.02)),
+                              linear-gradient(45deg, rgba(0,0,0,0.02) 25%, transparent 25%, transparent 75%, rgba(0,0,0,0.02) 75%, rgba(0,0,0,0.02));
+            background-size: 30px 30px;
+            background-position: 0 0, 15px 15px;
+            overflow: hidden;
+        }
+
+        .container {
+            padding: 30px;
+            max-width: 90%;
+            animation: fadeIn 2s;
+        }
+
+        .icon-container {
+            margin-bottom: 25px;
+        }
+        
+        .icon-container svg {
+            width: clamp(70px, 18vw, 120px);
+            height: auto;
+            fill: #856f5c;
+        }
+
+        h1 {
+            font-size: clamp(2.3rem, 7vw, 4.4rem);
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M13,12H20V13.5C20,17.09 17.09,20 13.5,20H4A2,2 0 0,1 2,18V6A2,2 0 0,1 4,4H13V12M11,10V4H4V18H13.5C16,18 18,16 18,13.5V12H13A2,2 0 0,1 11,10Z" />
+            </svg>
+        </div>
+        <h1>Sua história está sendo escrita agora. Faça deste capítulo um que você terá orgulho de reler.</h1>
+    </div>
+</body>
+</html>

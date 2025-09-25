@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Eco da Gentileza</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+        
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Quicksand', sans-serif;
+            color: #5d5d5d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #f4f1ea;
+            overflow: hidden;
+        }
+
+        .container {
+            padding: 30px;
+            max-width: 90%;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .icon-container {
+            margin-bottom: 25px;
+            animation: gentlePulse 3s infinite ease-in-out;
+        }
+        
+        .icon-container svg {
+            width: clamp(80px, 20vw, 130px);
+            height: auto;
+            fill: #e57373; /* Um vermelho suave */
+        }
+
+        h1 {
+            font-size: clamp(2.2rem, 7vw, 4rem);
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        
+        @keyframes gentlePulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/>
+            </svg>
+        </div>
+        <h1>Seja o tipo de pessoa que você gostaria de encontrar. A gentileza é um eco que sempre retorna.</h1>
+    </div>
+</body>
+</html>
